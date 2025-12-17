@@ -4,4 +4,4 @@ I am a college sophomore driven by curiosity and a willingness to learn by doing
 
 GitHub: https://github.com/saaj376
 Linkedin: https://www.linkedin.com/in/saajan-varghese-058453244/
-Portfolio Website: https://portfolio-website-delta-woad.vercel.app/
+Portfolio Website: https://saajan-varghese.vercel.app/
