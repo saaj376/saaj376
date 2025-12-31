@@ -20,10 +20,8 @@ saajan@developer: College sophomore | Software Engineer | Builder
 ┌──(saajan㉿github)-[~/profile]
 └─$ cat about.txt
 ════════════════════════════════════════════════════════════════════════════════
-Driven by curiosity and a willingness to learn by doing. I take calculated risks
-to explore new ideas, quickly prototype solutions, and iterate until something 
-useful emerges. I'm passionate about building practical software — from web apps
-to machine learning models — that can make an impact.
+I am exploring different topics and I think my path is destined for network 
+security because I love fiddling with stuff rather than building them.
 
 Open to collaboration, internships, and projects that push my limits and help me
 grow as an engineer.
@@ -62,31 +60,6 @@ Feel free to reach out for collaboration opportunities!
 ┌──(saajan㉿github)-[~/profile]
 └─$ █
 ```
-
----
-
-## 🖥️ Interactive Terminal
-
-Want to explore more? Try my **interactive terminal** where you can run commands and interact with my profile in real-time!
-
-**[🚀 Launch Interactive Terminal](https://saaj376.github.io/saaj376/terminal.html)**
-
-<details>
-<summary>📋 Available Commands</summary>
-
-- `help` - Show all available commands
-- `whoami` - Display information about me
-- `about` - Read about me
-- `skills` - List my skills
-- `projects` - View my projects
-- `contact` - Get contact information
-- `connect` - Show social links
-- `education` - View education
-- `experience` - See experience
-- `clear` - Clear the terminal
-- `ls`, `pwd`, `date`, `echo` - Basic Unix commands
-
-</details>
 
 ---
 
