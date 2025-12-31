@@ -96,7 +96,7 @@
         }
 
         .prompt-text {
-            color: #0f0;
+            color: #00ff00;
             margin-right: 5px;
         }
 
@@ -116,7 +116,7 @@
         }
 
         .command-line {
-            color: #0f0;
+            color: #00ff00;
         }
 
         .error {
@@ -281,7 +281,16 @@ Feel free to reach out for collaboration opportunities!`,
 
             date: () => `<span class="info">${new Date().toString()}</span>`,
 
-            echo: (args) => args.join(' '),
+            echo: (args) => {
+                // Escape HTML to prevent XSS
+                const text = args.join(' ');
+                const escaped = text.replace(/&/g, '&amp;')
+                                   .replace(/</g, '&lt;')
+                                   .replace(/>/g, '&gt;')
+                                   .replace(/"/g, '&quot;')
+                                   .replace(/'/g, '&#039;');
+                return escaped;
+            },
         };
 
         function executeCommand(cmd) {
