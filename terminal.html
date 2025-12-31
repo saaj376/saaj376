@@ -188,6 +188,9 @@
         const input = document.getElementById('input');
         const PROMPT = '┌──(saajan㉿github)-[~/profile]\n└─$';
 
+        // Security Note: All command outputs are from predefined functions in the commands object.
+        // User input is only used in the echo command, which properly escapes HTML.
+        // The PROMPT constant is hardcoded and not user-controlled.
         const commands = {
             help: () => `<span class="info">Available commands:</span>
   whoami      - Display information about me
