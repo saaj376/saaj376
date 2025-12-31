@@ -65,6 +65,31 @@ Feel free to reach out for collaboration opportunities!
 
 ---
 
+## 🖥️ Interactive Terminal
+
+Want to explore more? Try my **interactive terminal** where you can run commands and interact with my profile in real-time!
+
+**[🚀 Launch Interactive Terminal](https://saaj376.github.io/saaj376/terminal.html)**
+
+<details>
+<summary>📋 Available Commands</summary>
+
+- `help` - Show all available commands
+- `whoami` - Display information about me
+- `about` - Read about me
+- `skills` - List my skills
+- `projects` - View my projects
+- `contact` - Get contact information
+- `connect` - Show social links
+- `education` - View education
+- `experience` - See experience
+- `clear` - Clear the terminal
+- `ls`, `pwd`, `date`, `echo` - Basic Unix commands
+
+</details>
+
+---
+
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=saaj376&style=flat-square&color=blue" alt="Profile views"/>
 </div>
