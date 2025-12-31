@@ -175,7 +175,7 @@
 <span class="welcome">Welcome! Type 'help' to see available commands.</span>
             </div>
             <div class="prompt" id="prompt">
-                <span class="prompt-text">┌──(saajan㉿github)-[~/profile]
+                <span class="prompt-text" id="prompt-text">┌──(saajan㉿github)-[~/profile]
 └─$</span>
                 <input type="text" class="prompt-input" id="input" autocomplete="off" autofocus />
             </div>
@@ -186,6 +186,7 @@
         const terminal = document.getElementById('terminal');
         const output = document.getElementById('output');
         const input = document.getElementById('input');
+        const PROMPT = '┌──(saajan㉿github)-[~/profile]\n└─$';
 
         const commands = {
             help: () => `<span class="info">Available commands:</span>
@@ -305,8 +306,9 @@ Type 'help' to see available commands.`;
                 const line = document.createElement('div');
                 line.className = 'output-line';
                 if (isCommand) {
-                    line.innerHTML = `<span class="command-line">┌──(saajan㉿github)-[~/profile]
-└─$ ${text}</span>`;
+                    const cmdText = document.createTextNode(text);
+                    line.innerHTML = `<span class="command-line">${PROMPT} </span>`;
+                    line.querySelector('.command-line').appendChild(cmdText);
                 } else {
                     line.innerHTML = text;
                 }
@@ -314,30 +316,23 @@ Type 'help' to see available commands.`;
             }
         }
 
+        // Command history
+        let history = [];
+        let historyIndex = -1;
+
         input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
                 const cmd = input.value;
                 if (cmd.trim() !== '') {
+                    history.push(cmd);
+                    historyIndex = -1;
                     addOutput(cmd, true);
                     const result = executeCommand(cmd);
                     addOutput(result);
                     terminal.scrollTop = terminal.scrollHeight;
                 }
                 input.value = '';
-            }
-        });
-
-        // Keep input focused
-        terminal.addEventListener('click', () => {
-            input.focus();
-        });
-
-        // Command history
-        let history = [];
-        let historyIndex = -1;
-
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowUp') {
+            } else if (e.key === 'ArrowUp') {
                 e.preventDefault();
                 if (historyIndex < history.length - 1) {
                     historyIndex++;
@@ -352,12 +347,12 @@ Type 'help' to see available commands.`;
                     historyIndex = -1;
                     input.value = '';
                 }
-            } else if (e.key === 'Enter') {
-                if (input.value.trim() !== '') {
-                    history.push(input.value);
-                    historyIndex = -1;
-                }
             }
+        });
+
+        // Keep input focused
+        terminal.addEventListener('click', () => {
+            input.focus();
         });
 
         // Auto-focus on load
