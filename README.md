@@ -15,9 +15,6 @@
 
 
 ```
-
-Hi, I'm Saajan Palakathadathil Varghese, a computer science student at Shiv Nadar University Chennai specializing in IoT. I'm passionate about AI, full-stack development, and building projects that solve real problems.
-
 ## 🎓 About Me
 
 Currently pursuing B.Tech in Computer Science Engineering with an IoT specialization at Shiv Nadar University Chennai. I enjoy working with AI technologies, building web applications, and participating in hackathons.
