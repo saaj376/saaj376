@@ -25,7 +25,7 @@ Currently pursuing B.Tech in Computer Science Engineering with an IoT specializa
 
 | Category | Technologies |
 |----------|--------------|
-| **Languages** | <img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,ts,html,tailwind,go" /> |
+| **Languages** | <img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,ts,go" /> |
 | **AI/ML** | <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="48" height="48"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="48" height="48"/> |
 | **Web & Backend** | <img src="https://skillicons.dev/icons?i=flask,react,mongodb,postgres,supabase" /> |
 | **Tools** | <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,postman,linux" /> |
